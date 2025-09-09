@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "c8dc0e45-3b55-4a7d-8b55-aabf4c9ce39f",
+		"name": "Afford_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48276916",
+		"_collection_link": "https://msdevgoog01-9569007.postman.co/workspace/1f9d1677-e269-4f11-8df0-9c7ffc5234b0/collection/48276916-c8dc0e45-3b55-4a7d-8b55-aabf4c9ce39f?action=share&source=collection_link&creator=48276916"
+	},
+	"item": [
+		{
+			"name": "http://20.244.56.144/evaluation-service/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"msdevgoog01@gmail.com\",\r\n    \"name\": \"MAHESWARAM M V SUBRAHMANYAM\",\r\n    \"mobileNo\": \"7569399294\",\r\n    \"githubusername\": \"maheswaramsubrahmanyam\",\r\n    \"rollNo\": \"22NH1A0576\",\r\n    \"collegeName\": \"VKR VNB AGK COLLEGE OF ENGINEERING\",\r\n    \"accessCode\": \"YGxjAS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/register",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "clientID",
+						"value": "ddae8075-1f14-4db1-96d7-51fc16cc591f",
+						"type": "text"
+					},
+					{
+						"key": "clientSecret",
+						"value": "tgTGGjueZTYUyeBP",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"logID\": \"a4ad82e9-1200-4513-96d0-58bf5257d482\",\r\n  \"message\": \"Log created successfully\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "POST http://20.244.56.144/evaluation-service/logs",
+					"protocol": "POST http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"logs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
